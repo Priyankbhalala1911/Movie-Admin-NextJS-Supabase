@@ -1,6 +1,6 @@
 import { Supabase } from "@/lib/supabase";
 
-export const UploadImage = async (file: any) => {
+export const UploadImage = async (file: File) => {
   if (!file) return;
   const fileName = `${Date.now()}_${file.name}`;
   const filePath = `posters/${fileName}`;
